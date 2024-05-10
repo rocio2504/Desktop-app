@@ -54,12 +54,15 @@ namespace ContenedoresApp
 
             try
             {
+
+
                 int? Id = GetId();
                 if (Id != null)
                 {
                     FormNuevo frmedit = new FormNuevo(Id);
                     frmedit.ShowDialog();
                     Refresh();
+
                 }
             }
             catch (Exception ex)
@@ -77,10 +80,12 @@ namespace ContenedoresApp
             try
             {
                 return int.Parse(
-                    // dataGridView1.CurrentRow.Cells["NÚMERO"].Value.ToString());
+                     dataGridView1.CurrentRow.Cells["NÚMERO"].Value.ToString());
 
-                dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString()
-                 );
+
+                //dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString()
+
+                // );
 
             }
             catch (Exception ex)

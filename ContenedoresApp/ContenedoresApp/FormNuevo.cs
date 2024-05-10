@@ -33,9 +33,24 @@ namespace ContenedoresApp
         {
             DataTable tabla = new DataTable();
             tabla = sqlControl.loadData(Id);
+
+            // cargar combo
+
+            DataTable listaTipo = new DataTable();
+            listaTipo = sqlControl.cargarComboTipo();
+
             //comboBox1.DataSource = tabla;
             textBox1.Text = tabla.Rows[0][0].ToString();
-            comboBox1.Text = tabla.Rows[0][1].ToString();
+
+
+            //comboBox1.Text = tabla.Rows[0][1].ToString();
+            
+            this.comboBox1.DataSource = listaTipo;
+            this.comboBox1.ValueMember = "IdTipo";
+            this.comboBox1.DisplayMember = "Descripcion";
+            this.comboBox1.SelectedValue = tabla.Rows[0][1];
+            this.comboBox1.Refresh();
+
             comboBox2.Text = tabla.Rows[0][2].ToString();
             textBox2.Text = tabla.Rows[0][3].ToString();
             textBox3.Text = tabla.Rows[0][4].ToString();
@@ -137,7 +152,7 @@ namespace ContenedoresApp
         private void FormNuevo_Load(object sender, EventArgs e)
         {
             //cargar combo tipo
-            cargarComboTipo();
+            //cargarComboTipo();
             //cargar combo tamaño
             cargarComboTamanio();
         }
@@ -168,6 +183,11 @@ namespace ContenedoresApp
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

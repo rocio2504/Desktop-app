@@ -18,16 +18,16 @@ namespace ContenedoresApp
 
 
         //SqlConnection cnn;
-        SqlConnection cnn = new SqlConnection("Data source=LAPTOP-1JK1J506\\SQLEXPRESS;Initial Catalog=Db_contenedores;" +
-            "User=sa;Password=12345678;" + "Integrated Security=true;TrustServerCertificate=Yes");
+        SqlConnection cnn = new SqlConnection("Data source=localhost;Initial Catalog=Db_contenedores;" +
+            "User=sa;Password=s1;" + "Integrated Security=true;TrustServerCertificate=Yes");
 
 
         public ConexionBD()
         {
             try
             {
-                SqlConnection cnn = new SqlConnection("Data source=LAPTOP-1JK1J506\\SQLEXPRESS;Initial Catalog=Db_contenedores;" +
-            "User=sa;Password=12345678;" + "Integrated Security=true;TrustServerCertificate=Yes");
+                SqlConnection cnn = new SqlConnection("Data source=localhost;Initial Catalog=Db_contenedores;" +
+            "User=sa;Password=s1;" + "Integrated Security=true;TrustServerCertificate=Yes");
                 // cnn.Open();
                 //MessageBox.Show("Conectado");
 

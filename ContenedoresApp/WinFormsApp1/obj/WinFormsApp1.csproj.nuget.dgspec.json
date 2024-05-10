@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\ContenedoresApp\\ContenedoresApp.csproj": {}
+    "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\ContenedoresApp\\ContenedoresApp.csproj": {
+    "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\ContenedoresApp\\ContenedoresApp.csproj",
-        "projectName": "ContenedoresApp",
-        "projectPath": "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\ContenedoresApp\\ContenedoresApp.csproj",
+        "projectUniqueName": "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectName": "WinFormsApp1",
+        "projectPath": "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\WinFormsApp1\\WinFormsApp1.csproj",
         "packagesPath": "C:\\Users\\maxsv\\.nuget\\packages\\",
-        "outputPath": "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\ContenedoresApp\\obj\\",
+        "outputPath": "D:\\UNIDAD F\\Fuentes\\Proyecto Rocio\\ContenedoresApp\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maxsv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,12 +44,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.6, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
